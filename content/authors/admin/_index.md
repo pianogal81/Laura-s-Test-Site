@@ -71,4 +71,4 @@ highlight_name: true
 
 Laura Ziegler is a Teaching Professor of Statistics at Iowa State University. Her research interests include statistics education. She ...
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/CV.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/CV.pdf" "newtab" >}}CV{{< /staticref >}}.
