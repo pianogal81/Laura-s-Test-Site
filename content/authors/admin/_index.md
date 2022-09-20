@@ -11,29 +11,28 @@ role: Teaching Professor of Statistics
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Iowa State University
-    url: https://www.stanford.edu/
+    url: https://www.iastate.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include statistics education.
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Statistics Education
+  - other
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
+    - course: PhD in Educational Psychology
+      institution: University of Minnesota
       year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: Masters in Statistics
+      institution: University of Nebraska-Lincoln
+      year: 2006
+    - course: BS in Mathematics and Computer Science
+      institution: Wayne State College
+      year: 2004
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
