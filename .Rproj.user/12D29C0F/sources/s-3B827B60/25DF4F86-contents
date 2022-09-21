@@ -27,7 +27,7 @@ education:
   courses:
     - course: PhD in Educational Psychology
       institution: University of Minnesota
-      year: 2012
+      year: 2014
     - course: Masters in Statistics
       institution: University of Nebraska-Lincoln
       year: 2006
