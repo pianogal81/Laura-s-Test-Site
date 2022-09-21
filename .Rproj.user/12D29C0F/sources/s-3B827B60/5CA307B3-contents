@@ -25,7 +25,7 @@ feature:
     icon_pack: fas
     name: Statistics
   - description: 10%
-    icon: "fa-solid fa-person-chalkboard"
+    icon: fa-person-chalkboard
     icon_pack: fas
     name: Curriculum Development
 # Uncomment to use emoji icons.
