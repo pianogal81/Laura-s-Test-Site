@@ -42,13 +42,14 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gcushen
+    link: 'mailto:lziegler@iastate.edu'
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/laura-ziegler-6086341b/
+
+# - icon: github
+#   icon_pack: fab
+#   link: https://github.com/gcushen
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
