@@ -14,7 +14,7 @@ organizations:
     url: https://www.iastate.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Teaching Professor in the Department of Statistics at Iowa State University. My main teaching interests center around students in introductory statistics courses and helping graduate students learn how to teach statistics. I am also interested in connecting with high school teachers who teach statistics and am involved in the AP Statistics community.
+#bio: 
 
 # Interests to show in About widget
 interests:
@@ -65,6 +65,6 @@ email: ''
 highlight_name: true
 ---
 
-Laura Ziegler is a Teaching Professor of Statistics at Iowa State University. She ...
+I am a Teaching Professor in the Department of Statistics at Iowa State University. My main teaching interests center around students in introductory statistics courses and helping graduate students learn how to teach statistics. I am also interested in connecting with high school teachers who teach statistics and am involved in the AP Statistics community.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/CV.pdf" "newtab" >}}CV{{< /staticref >}}.
