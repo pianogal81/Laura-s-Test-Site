@@ -21,7 +21,7 @@ content:
     category: ''
     publication_type: ''
     author: ''
-    exclude_featured: true
+    exclude_featured: false
     exclude_future: true
     exclude_past: true
   # Choose how many pages you would like to display (0 = all pages)
