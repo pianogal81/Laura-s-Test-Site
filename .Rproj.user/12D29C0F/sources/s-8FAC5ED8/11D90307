@@ -3,7 +3,7 @@
     "path": "~/GitHub/Laura-s-Test-Site/content/publication/example/index.md",
     "project_path": "content/publication/example/index.md",
     "type": "markdown",
-    "hash": "4235440319",
+    "hash": "3538488331",
     "contents": "",
     "dirty": false,
     "created": 1664489594131.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "45,15",
-        "scrollLine": "33"
+        "cursorPosition": "55,0",
+        "scrollLine": "43"
     },
     "folds": "",
-    "lastKnownWriteTime": 1664489672,
+    "lastKnownWriteTime": 1664489895,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1664489672398,
+    "last_content_update": 1664489895381,
     "read_only": false,
     "read_only_alternatives": []
 }
