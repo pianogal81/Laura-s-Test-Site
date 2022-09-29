@@ -6,8 +6,8 @@ title: Laura Ziegler
 superuser: true
 
 # Role/position/tagline
-role: She/Her/Hers
-role: Teaching Professor of Statistics
+role: Pronouns: She/Her/Hers
+#role: Teaching Professor of Statistics
 
 # Organizations/Affiliations to show in About widget
 organizations:
