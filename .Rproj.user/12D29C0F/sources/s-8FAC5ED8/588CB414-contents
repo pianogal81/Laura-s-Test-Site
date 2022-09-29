@@ -1,0 +1,143 @@
+gesell<-read.csv(file.choose(), header=T)
+library(ggplot2)
+
+
+
+##Correlation-full dataset
+  cor(gesell$age, gesell$score)
+  ##r=-.64
+
+##Basic Scatterplot with lm-full dataset
+  ggplot(gesell, aes(x=age, y=score)) + geom_point(shape=16, size=3) +
+    labs(x = "Age at First Word (months)", y="Score", title="Gesell Test")+theme_bw()+
+    theme(plot.title = element_text(hjust=0.5, size = rel(2)))+    ##Change size of text in title
+    theme(axis.title.y = element_text(size = rel(1.4)))+    ##Change size of label text in y-axis label
+    theme(axis.title.x = element_text(size = rel(1.4)))+    ##Change size of label text in x-axis label
+    theme(axis.text.x = element_text(size = rel(1.4)))+    ##Change size of tick text in y-axis label
+    theme(axis.text.y = element_text(size = rel(1.4)))+    ##Change size of tick text in x-axis label
+    geom_smooth(method="lm", se=FALSE)+
+    geom_text(data=gesell, aes(x=age, y=score,label=child), vjust=1.5)  ##Add labels for each child
+
+##Fit linear model-full dataset
+  modelGesell <- lm(gesell$score~gesell$age)
+  summary(modelGesell)
+
+
+##Analysis without child 18
+  ##Create subset of data with outlier removed
+  ##The outlier was in row 18
+    gesell18 = gesell[-18,]
+
+##Correlation-without Child 18
+  cor(gesell18$age, gesell18$score)
+  ##r=-.33
+
+##Basic Scatterplot with lm-without Child 18
+  ggplot(gesell18, aes(x=age, y=score)) + geom_point(shape=16, size=3) +
+    labs(x = "Age at First Word (months)", y="Score", title="Gesell Test-Excluding Child 18")+
+    theme_bw()+
+    theme(plot.title = element_text(hjust=0.5, size = rel(2)))+
+    theme(axis.title.y = element_text(size = rel(1.4)))+
+    theme(axis.title.x = element_text(size = rel(1.4)))+
+    theme(axis.text.x = element_text(size = rel(1.4)))+
+    theme(axis.text.y = element_text(size = rel(1.4)))+
+    geom_smooth(method="lm", se=FALSE)
+
+##Fit linear model-without Child 18
+  modelGesell18 <- lm(gesell18$score~gesell18$age)
+  summary(modelGesell18)
+
+
+##Analysis without child 19
+  ##Create subset of data with outlier removed
+  ##The outlier was in row 19
+    gesell19 = gesell[-19,]
+
+##Correlation-without Child 19
+  cor(gesell19$age, gesell19$score)
+  ##r=-.76
+
+##Basic Scatterplot with lm-without Child 19
+  ggplot(gesell19, aes(x=age, y=score)) + geom_point(shape=16, size=3) +
+    labs(x = "Age at First Word (months)", y="Score", title="Gesell Test-Excluding Child 19")+
+    theme_bw()+
+    theme(plot.title = element_text(hjust=0.5, size = rel(2)))+
+    theme(axis.title.y = element_text(size = rel(1.4)))+
+    theme(axis.title.x = element_text(size = rel(1.4)))+
+    theme(axis.text.x = element_text(size = rel(1.4)))+
+    theme(axis.text.y = element_text(size = rel(1.4)))+
+    geom_smooth(method="lm", se=FALSE)
+
+##Fit linear model-without Child 19
+  modelGesell19 <- lm(gesell19$score~gesell19$age)
+  summary(modelGesell19)
+
+
+##Basic Scatterplot with lm's
+  ggplot(gesell, aes(x=age, y=score)) + geom_point(shape=16, size=1.5) +
+    labs(x = "Age at First Word (months)", y="Score", title="Gesell Test")+theme_bw()+
+    theme(plot.title = element_text(hjust=0.5, size = rel(1.6)))+
+    theme(axis.title.y = element_text(size = rel(1.2)))+
+    theme(axis.title.x = element_text(size = rel(1.2)))+
+    theme(axis.text.x = element_text(size = rel(1.2)))+
+    theme(axis.text.y = element_text(size = rel(1.2)))+
+    geom_smooth(method="lm", se=FALSE)+
+    geom_abline(intercept = 105.6299, slope = -.7792)+
+    geom_abline(intercept = 109.3047, slope = -1.1933, color="red")+
+    geom_text(data=gesell, aes(x=age, y=score,label=child), vjust=1.5, size = 3)+
+    annotate("text", x=30, y=120, label= "Blue = Full Dataset")+
+    annotate("text", x=29.5, y=115, label= "Red = 19 Deleted")+
+    annotate("text", x=30, y=110, label= "Black = 18 Deleted")
+
+
+##Create a data frame including results from the lm() function
+  outGes = fortify(modelGesell)
+  head(outGes)
+
+  ##Add child ID to outGes data frame
+    outGes <- merge(gesell, outGes, by = "row.names")
+
+  ###Leverage cut-offs:
+    ## n of IVs
+      k <- 1
+    ## Find n
+      n <- nrow(gesell)
+  (lev.cutoff.low<-2*(k+1)/n)
+  (lev.cutoff.high<-3*(k+1)/n)
+
+  ##Create plot with leverage values on x-axis and studentized residuals on y-axis, size by Cook's D
+    levPlotGes <- ggplot(outGes, aes(x=.hat, y=.stdresid, size=.cooksd,
+      label=child,
+        ##Including label=child will label the points by child in the interactive plot from plotly
+      text = paste0("Child: ", child, "</br></br>Leverage: ", round(.hat, 2), "</br>Std Residual: ",
+                    round(.stdresid, 2), "</br>Cooks D: ", round(.cooksd, 2)))) + geom_point() +
+        ##Including text = ... will change out the output for the points in the plotly
+      geom_point() +
+      labs(x = "Leverage Values",y="Studentized Residuals",title="Leverage and Influence Plot")+
+      theme_bw()+
+      xlim(0, .7)+ylim(-5, 5)+
+      geom_hline(yintercept=0)+
+      geom_hline(yintercept=2, colour="blue")+
+      geom_hline(yintercept=-2, colour="blue")+
+      geom_hline(yintercept=3, colour="red")+
+      geom_hline(yintercept=-3, colour="red")+
+      geom_vline(xintercept=lev.cutoff.low, colour="blue")+
+      geom_vline(xintercept=lev.cutoff.high, colour="red")+
+      geom_text(aes(x=0.08,y=-4,label="leverage cut-off=0.19",size=NULL),vjust=1.5)+
+      geom_text(aes(x=0.4,y=-4,label="leverage cut-off=0.29",size=NULL),vjust=1.5)+
+      theme(plot.title = element_text(hjust=0.5, size = rel(2)))+
+      theme(axis.title.y = element_text(size = rel(1.4)))+
+      theme(axis.title.x = element_text(size = rel(1.4)))+
+      theme(axis.text.x = element_text(size = rel(1.6)))+
+      theme(axis.text.y = element_text(size = rel(1.6)))+
+      guides(size=guide_legend("Cook's D"))
+    levPlotGes
+
+
+
+  ##Use plotly library to make the plot interactive
+    ##Create plot
+      library(plotly)
+      InteractiveLevPlot=ggplotly(levPlotGes, tooltip = "text")
+        ##Note the legend does not show up in the interactive plot.
+      InteractiveLevPlot

@@ -1,0 +1,75 @@
+sleep<-read.csv(file.choose(), header=T)
+library(ggplot2)
+##http://www.bls.gov/tus/datafiles_2015.htm
+  ##Activity Summary File
+
+head(sleep)
+
+
+##Correlation matrix for sleeping, age, running, and cardio
+  ##The data set has missing values, NA's, so we need to add the argument use="pairwise.complete.obs"
+  cormatrix <- cor(sleep[,c(5, 1, 7, 8)], use="pairwise.complete.obs")
+  cormatrix
+
+##Scatterplot matrix
+  pairs(~sleeping+age+running+cardio,data=sleep, main="Scatterplot Matrix")
+
+##For sex and day to be factors
+  sleep$sex <- as.factor(sleep$sex)
+  sleep$day <- as.factor(sleep$day)
+
+#Multiple Regression analysis
+  #IVs = age, sex, day, running, and cardio
+    multSleepModel <- lm(sleep$sleeping~sleep$age+sleep$sex+sleep$day+sleep$running+sleep$cardio)
+    summary(multSleepModel)
+
+##Checking Assumptions
+  ##Create a data frame including results from the lm() function
+  ##Need ggplot library for fortify() code
+    outmultSleep = fortify(multSleepModel)
+    head(outmultSleep)
+
+  ##Create standaridized residual plot with predicted values on x-axis and STANDARDIZED residuals on y-axis
+    ggplot(outmultSleep, aes(x=.fitted, y=.stdresid)) + 
+      geom_point(shape=19, size=3) + 
+      labs(x = "Predicted Sleep",y="Standardized Residuals",title="Standardized Residual Plot")+theme_bw()+
+      geom_hline(yintercept=0)
+    
+  ##Set so 2 graphs will appear in the same window  
+    par(mfrow=c(1,2))
+  
+  ##Histogram of residuals
+    hist(outmultSleep$.resid, main="Histogram of Residuals", xlab="Residuals")
+  
+  ##Normal QQ Plot
+    qqnorm(outmultSleep$.resid, main = "Normal Q-Q Plot",
+           xlab = "Theoretical Normal Quantiles", ylab = "Residuals",
+           plot.it = TRUE, datax = FALSE)
+    qqline(outmultSleep$.resid)  ##Adds line to plot
+  
+  ##Set so future graphs will appear one per window
+    par(mfrow=c(1,1))
+    dev.off() ##Sometimes ggplot doesn't work after par(mfrow) if I don't add this line of code. Will delete graphs in window.
+    ##Error = "invalid graphics state"
+    
+  ##Levene test for Homoskedasticity
+  ##You need the car package for this test
+    library(car)
+  ##Step 1: Create two groups
+    outmultSleep$yHatCategory <- ifelse(outmultSleep$.fitted < median(outmultSleep$.fitted), c("group1"), c("group2")) 
+  ##Step 2: Run test
+    leveneTest(.resid ~ yHatCategory, data=outmultSleep)
+
+
+##Graph between sleeping and age, color coded by cardio, shape by weekend
+ ggplot(sleep, aes(age, sleeping, color=cardio))+geom_point(aes(shape = factor(sex)))+
+    labs(x = "Age (years)",y="Time Spent Sleeping (minutes)")+
+    ggtitle(expression(atop("Sleep vs Age", atop(italic("Shape by Weekend"), "")))) +
+    theme_bw()+
+   theme(plot.title = element_text(hjust=0.5, size = rel(2)))+    ##Change size of text in title
+   theme(axis.title.y = element_text(size = rel(1.4)))+    ##Change size of label text in y-axis label
+   theme(axis.title.x = element_text(size = rel(1.4)))+    ##Change size of label text in x-axis label
+   theme(axis.text.x = element_text(size = rel(1.6)))+    ##Change size of tick text in y-axis label
+   theme(axis.text.y = element_text(size = rel(1.6)))    ##Change size of tick text in x-axis label
+ 
+ 
