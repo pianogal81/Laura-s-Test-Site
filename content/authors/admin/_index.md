@@ -6,7 +6,7 @@ title: Laura Ziegler
 superuser: true
 
 # Pronouns
-subtitle: Pronouns: She/Her/Hers
+#subtitle: Pronouns: She/Her/Hers
 
 # Role/position/tagline
 role: Teaching Professor of Statistics
