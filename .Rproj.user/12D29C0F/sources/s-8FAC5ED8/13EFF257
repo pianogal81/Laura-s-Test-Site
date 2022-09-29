@@ -1,26 +1,26 @@
 {
-    "id": "C7B076E3",
-    "path": "~/GitHub/Laura-s-Test-Site/content/authors/admin/_index.md",
-    "project_path": "content/authors/admin/_index.md",
+    "id": "13EFF257",
+    "path": "~/GitHub/Laura-s-Test-Site/content/post/getting-started/index.md",
+    "project_path": "content/post/getting-started/index.md",
     "type": "markdown",
-    "hash": "2103815361",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1664396695507.0,
+    "created": 1664480875729.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "3,0",
-        "scrollLine": "0"
+        "cursorPosition": "54,33",
+        "scrollLine": "46"
     },
     "folds": "",
-    "lastKnownWriteTime": 1664480813,
+    "lastKnownWriteTime": 1663709535,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1664480813806,
+    "last_content_update": 1663709535,
     "read_only": false,
     "read_only_alternatives": []
 }

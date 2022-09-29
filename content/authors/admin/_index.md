@@ -1,7 +1,7 @@
 ---
 # Display name
 title: Laura Ziegler
-subtitle: test sub
+
 
 # Is this the primary user of the site?
 superuser: true
