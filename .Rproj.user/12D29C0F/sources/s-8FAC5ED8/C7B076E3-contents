@@ -16,7 +16,7 @@ organizations:
     url: https://www.stat.iastate.edu/
 
 # Short bio (displayed in user profile at end of posts)
-#bio: 
+bio: test
 
 # Interests to show in About widget
 interests:
