@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: LZtheme
-  theme_night: LZtheme
+  theme_day: LZtheme.toml
+  theme_night: LZtheme.toml
   font: minimal
   font_size: L
 
