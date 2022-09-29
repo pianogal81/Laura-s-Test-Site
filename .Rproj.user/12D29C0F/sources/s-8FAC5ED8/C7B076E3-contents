@@ -5,11 +5,10 @@ title: Laura Ziegler
 # Is this the primary user of the site?
 superuser: true
 
-# Pronouns
-#subtitle: Pronouns: She/Her/Hers
-
 # Role/position/tagline
-role: Teaching Professor of Statistics
+role: 
+  - Pronouns: She/Her/Hers
+  - Teaching Professor of Statistics
 
 # Organizations/Affiliations to show in About widget
 organizations:
