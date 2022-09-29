@@ -7,7 +7,7 @@ superuser: true
 
 # Role/position/tagline
 role: She/Her/Hers
-#Teaching Professor of Statistics
+position: Teaching Professor of Statistics
 
 # Organizations/Affiliations to show in About widget
 organizations:
