@@ -12,7 +12,7 @@ role: Pronouns - She/Her/Hers
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Iowa State University {{< \n >}} Department of Statistics
+  - name: Iowa State University
     url: https://www.stat.iastate.edu/
 
 # Short bio (displayed in user profile at end of posts)
