@@ -1,16 +1,23 @@
 # Theme metadata
-name = "Rose"
+name = "Minimal"
 
 [light]
   # Primary
-  primary = "rgb(251, 191, 183)"
+  primary = "#1565c0"
 
   # Menu
-  menu_primary = "rgb(247, 247, 247)"
-  menu_text = "#000"
-  menu_text_active = "rgb(25, 25, 25)"
-  menu_title = "#000"
+  menu_primary = "#fff"
+  menu_text = "#34495e"
+  menu_text_active = "#2962ff"
+  menu_title = "#2b2b2b"
 
   # Home sections
-  home_section_odd = "#FFF"
-  home_section_even = "rgb(234, 242, 250)"
+  home_section_odd = "rgb(255, 255, 255)"
+  home_section_even = "rgb(247, 247, 247)"
+
+[dark]
+  # Primary
+  primary = "#bbdefb"
+
+  link = "#bbdefb"
+  link_hover = "#bbdefb"
