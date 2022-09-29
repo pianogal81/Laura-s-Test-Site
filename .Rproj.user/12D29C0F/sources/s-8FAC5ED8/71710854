@@ -1,19 +1,19 @@
 {
-    "id": "13EFF257",
-    "path": "~/GitHub/Laura-s-Test-Site/content/post/getting-started/index.md",
-    "project_path": "content/post/getting-started/index.md",
+    "id": "71710854",
+    "path": "~/GitHub/Laura-s-Test-Site/README.md",
+    "project_path": "README.md",
     "type": "markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1664480875729.0,
+    "created": 1664487240847.0,
     "source_on_save": false,
-    "relative_order": 2,
+    "relative_order": 4,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "74,32",
-        "scrollLine": "61"
+        "cursorPosition": "41,14",
+        "scrollLine": "31"
     },
     "folds": "",
     "lastKnownWriteTime": 1663709535,
