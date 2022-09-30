@@ -27,7 +27,7 @@ publishDate: '2021-01-01T00:00:00Z'
 publication: In *Journal of Statistics and Data Science Education*
 publication_short: In *JSDSE*
 
-abstract: We present an innovative activity that uses data about LEGO sets to help students self-discover multiple linear regressions. Students are guided to predict the price of a LEGO set posted on Amazon.com (Amazon price) using LEGO characteristics such as the number of pieces, the theme (i.e., product line), and the general size of the pieces. By starting with graphical displays and simple linear regression, students are able to develop additive multiple linear regression models as well as interaction models to accomplish the task. We provide examples of student responses to the activity and suggestions for teachers based on our experiences. Supplementary materials for this article are available online.
+abstract: We present an innovative activity that uses data about LEGO sets to help students self-discover multiple linear regressions. Students are guided to predict the price of a LEGO set posted on Amazon.com (Amazon price) using LEGO characteristics such as the number of pieces, the theme (i.e., product line), and the general size of the pieces. By starting with graphical displays and simple linear regression, students are able to develop additive multiple linear regression models as well as interaction models to accomplish the task. We provide examples of student responses to the activity and suggestions for teachers based on our experiences. Supplementary materials for this article are available online.  https://www.tandfonline.com/doi/full/10.1080/26939169.2021.1946450
 
 
 
