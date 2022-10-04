@@ -1,26 +1,26 @@
 {
-    "id": "DF44FAA7",
-    "path": "~/GitHub/Laura-s-Test-Site/content/authors/admin/_index.md",
-    "project_path": "content/authors/admin/_index.md",
+    "id": "003DE60C",
+    "path": "~/GitHub/Laura-s-Test-Site/content/publication/BioSQuaRE/index.md",
+    "project_path": "content/publication/BioSQuaRE/index.md",
     "type": "markdown",
-    "hash": "2572583210",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1664918843150.0,
+    "created": 1664919424686.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "13,38",
-        "scrollLine": "0"
+        "cursorPosition": "27,24",
+        "scrollLine": "16"
     },
     "folds": "",
-    "lastKnownWriteTime": 1664919260,
+    "lastKnownWriteTime": 1664920754,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1664919260763,
+    "last_content_update": 1664920754036,
     "read_only": false,
     "read_only_alternatives": []
 }
