@@ -11,11 +11,11 @@ authors:
 # Author notes (optional)
 
 
-date: '2018-07-01T00:00:00Z'
-doi: '10.1080/26939169.2021.1946450'
+date: '2018-11-30T00:00:00Z'
+doi: '10.52041/serj.v17i2.164'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2021-01-01T00:00:00Z'
+publishDate: '2018-11-30T00:00:00Z'
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -24,10 +24,10 @@ publishDate: '2021-01-01T00:00:00Z'
 # publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Journal of Statistics and Data Science Education*
-publication_short: In *JSDSE*
+publication: In *Statistics Education Research Journal*
+publication_short: In *SERJ*
 
-abstract: We present an innovative activity that uses data about LEGO sets to help students self-discover multiple linear regressions. Students are guided to predict the price of a LEGO set posted on Amazon.com (Amazon price) using LEGO characteristics such as the number of pieces, the theme (i.e., product line), and the general size of the pieces. By starting with graphical displays and simple linear regression, students are able to develop additive multiple linear regression models as well as interaction models to accomplish the task. We provide examples of student responses to the activity and suggestions for teachers based on our experiences. Supplementary materials for this article are available online.  https://www.tandfonline.com/doi/full/10.1080/26939169.2021.1946450
+abstract: The purpose of this study was to develop the Basic Literacy In Statistics (BLIS) assessment for students in an introductory statistics course, at the postsecondary level, that includes, to some extent, simulation-based methods. The definition of statistical literacy used in the development of the assessment was the ability to read, understand, and communicate statistical information. Multiple instruments were available to assess students in introductory statistics courses; however, there were no assessments available that focused on statistical literacy. Evidence of reliability and validity were collected during the development of the assessment. Evidence of reliability and validity was high; however, more items with high difficulty levels could increase the precision in estimating ability estimates for higher achieving students.  https://iase-web.org/ojs/SERJ/article/view/164
 
 
 
