@@ -6,7 +6,7 @@ title: 'Development of a biological science quantitative reasoning exam (BioSQua
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - L. Stanhope
-  - J. Garfield
+  - admin
   - T. Haque
   - L. Le
   - M. Vinces
