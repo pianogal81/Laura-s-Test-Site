@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 65
 
-title: Projects
+title: Resources
 subtitle: ''
 
 content:
@@ -27,7 +27,7 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Statistics Education Resources for Teachers
+    - name: Resources for Teachers
       tag: Deep Learning
     - name: Other
       tag: Demo
