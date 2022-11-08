@@ -1,0 +1,26 @@
+{
+    "id": "37AFB384",
+    "path": "~/GitHub/Laura-s-Test-Site/config/_default/menus.yaml",
+    "project_path": "config/_default/menus.yaml",
+    "type": "yaml",
+    "hash": "95899798",
+    "contents": "",
+    "dirty": false,
+    "created": 1667947745229.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "16,10",
+        "scrollLine": "9"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1667947854,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1667947854033,
+    "read_only": false,
+    "read_only_alternatives": []
+}
