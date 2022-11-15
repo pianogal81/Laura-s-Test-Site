@@ -28,7 +28,7 @@ content:
     - name: All
       tag: '*'
     - name: Resources for Teachers
-      tag: Deep Learning
+      tag: Resources for Teachers
     - name: Other
       tag: Demo
 
