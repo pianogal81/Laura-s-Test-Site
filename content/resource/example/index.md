@@ -1,6 +1,3 @@
-# This file represents a page section.
-headless: false
-
 ---
 title: Example Resource
 summary: An example of using the in-built project page.
